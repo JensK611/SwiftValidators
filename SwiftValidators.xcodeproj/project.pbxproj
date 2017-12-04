@@ -27,7 +27,6 @@
 		13E80BC81B6BB64D001DFEA4 /* SwiftValidators.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 13E80BC71B6BB64D001DFEA4 /* SwiftValidators.podspec */; };
 		13E80BCA1B6BB694001DFEA4 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 13E80BC91B6BB694001DFEA4 /* LICENSE */; };
 		13F2903D1CEDA9A50081F851 /* CHANGELOG.md in Resources */ = {isa = PBXBuildFile; fileRef = 13F2903B1CEDA1080081F851 /* CHANGELOG.md */; };
-		98230A4E09FD608BE32EC534 /* Pods_SwiftValidators.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 229CDA69E8830ADE09A57BCD /* Pods_SwiftValidators.framework */; };
 		B166F1EC1D86B32D0015E611 /* PostalCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B166F1EB1D86B32D0015E611 /* PostalCode.swift */; };
 		D73D6CBEA6F4C4B64AE3C787 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = D73D62E7F646ACCD88ABA593 /* README.md */; };
 		FFA01A3BC9BFC00F54CFCD27 /* Pods_SwiftValidatorsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D590C794FFC3FF9BF8D6D1C9 /* Pods_SwiftValidatorsTests.framework */; };
@@ -85,7 +84,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				98230A4E09FD608BE32EC534 /* Pods_SwiftValidators.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,7 +230,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 131584DB1B5FFCB60077E959 /* Build configuration list for PBXNativeTarget "SwiftValidators" */;
 			buildPhases = (
-				E7209C4E5D1AD8318FCEA14E /* [CP] Check Pods Manifest.lock */,
 				131584C01B5FFCB60077E959 /* Sources */,
 				131584C11B5FFCB60077E959 /* Frameworks */,
 				131584C21B5FFCB60077E959 /* Headers */,
@@ -362,24 +359,6 @@
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-SwiftValidatorsTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E7209C4E5D1AD8318FCEA14E /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SwiftValidators-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
